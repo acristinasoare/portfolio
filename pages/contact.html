@@ -4,9 +4,62 @@
         <title>Contact Me
         </title>
         <body>
-            <header>
-                <h1>Contact Me</h1>
-            </header>
+        <header>
+            <sections>
+            <h1>Contact Me</h1>
+            <figure>
+                <img src="../images/phone.jpg" alt="image of landline phone" width="300" height="150">
+            </figure>
+            <hr />
+            <h3>
+                <p> Use the form below if you would like to get in touch with me: </p>
+            </h3>
+
+            <fieldset>
+                <legend>Your Details:</legend>
+                <label>
+                    Name:
+                    <input type="text" name="name">
+                </label>
+                <br/>
+                <br/>
+                <label>
+                    Email:
+                    <input type="email" name="email">
+                </label>
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>Reason for contacting:</legend>
+                <label>
+                    <input type="checkbox" name="reason" value="feedback"> Provide feedback
+                </label>
+                <br/>
+                <label>
+                    <input type="checkbox" name="reason" value="collaborate"> Collaborate
+                </label>
+                <br/>
+                <label>
+                    <input type="checkbox" name="reason" value="questions"> Ask questions
+                </label>
+                <br/>
+                <label>
+                    <input type="checkbox" name="reason" value="issues"> Report issues
+                </label>
+                <br/>
+             </fieldset>
+             <br/>
+             <fieldset>
+                    <legend>Your message:</legend>
+                    <label>
+                        <textarea name="message" placeholder="Enter your message here..." rows="5" cols="40"></textarea>
+                    </label>
+             </fieldset>
+          </sections>
+
+        </header>
+
 
         </body>
     </head>
