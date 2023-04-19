@@ -1,59 +1,118 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Cristina
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+
         </title>
         <body>
             <header>
-            <h1> Cristina Soare </h1>
-            <figure>
-                <img src="images/AnaSoare.jpg" alt="Portait of Cristina">
-            </figure>
-            <h2> Command Shift Student</h2>
-            <nav> 
-                <a href="./pages/contact.html" target="_blank">Contact Me</a>
-                <a href="./pages/projects.html" target="_blank">Projects</a>
-            </nav>
+                <h1> Cristina S. </h1>
+                <figure id="profilepic">
+                    <img class = "photo" src="images/AnaSoare.jpg" alt="Profile photo" >
+                </figure>
+                <h2> Command Shift Student</h2>
+                 <nav class="pages"> 
+                    <button class="navbar"><a href="#about-me">About</a></button>
+                    <button class="navbar"><a href="#contactform">Contact Me</a></button>
+                </nav>
             </header>
             <br />
             <hr />
-            <section>
-            <h3> About Me </h3>
-            <p> Originally from Transylvania, Romania, I moved to Scotland when I was 19 to study Dentistry at Dundee University. I am currently working at a private practice in Edinburgh.</p>
-            <p> After considering leaving dentistry on and off for the last couple of years, I finally decided to take a leap of faith and embark on a programming course to teach myself coding skills and try my luck at a new career. Another dentist that has completed the course has recommended me Command Shift and here I am today learning how to create my first web page.  </p>
-            <figure>
-                <img src="../portfolio/images/MeonSkye.jpeg" alt="Cristina looking onto a beach on Isle of Skye" width="300" height="300">
+            <div class = "about-me" id="about-me">
+                <h3> A bit about myself </h3>
+                    <p class="background" class="intro"> Originally from Transylvania, Romania, I moved to Scotland when I was 19 to study Dentistry at University of Dundee. 
+                    I am currently working at <a href="https://www.barrondental.com/" target="_blank">Barron Dental</a>, a private practice in Edinburgh.</p>
+                    <p class="background" class="intro"> After practicing dentistry for 7 years, I have decided to seek new challenges and my enthusiasm for
+                     problem-solving has led me to find out more about the possibility of learning programming skills.
+                    Guided by my own inquisitive research and the advice of an accomplished dental colleague who completed this course,
+                    I have decided to take a leap of faith and register with <a href="https://platform.manchestercodes.com/" target="_blank">Command Shift</a>. 
+                    I am currently finding myself exploring the intricacies of web page development, brimming with excitement for the possibilities that lay ahead.  </p>
+                    <p> When not immersed in the world of dentistry or programming, I delight in exploring different regions of Scotland.
+                    I am particularly drawn to the stunning Scottish coastlines (Scotland has many pristine beaches) or hiking in the Highlands of Scotland.</p>
+                    <p> As the weather in Scotland can be fairly unpredictable, I have learned to cerish  the nature in all its moods, and enjoy an adventure come rain or shine.</p>
                 <br />
-                <figcaption>
-                    I am the happiest when I am by the sea. <br> This picture was taken on Isle of Skye.
-                </figcaption>
-            </figure>
-            <br />
-            <figure>
-                <img src="../portfolio/images/UsonIsla.jpeg" alt="Cristina and her partner on Isle of Isla" width="300" hieght="300">
-                <br />
-                <figcaption>
-                    A bit of rain can't spoil our fun at the beach.  
-                </figcaption>
-            </figure>
-            </section>
-            <h4> Qualities </h4>
-            <ol>
-                <li>Adaptable</li>
-                <li>Good listener</li>
-                <li>Reliable</li>
-            </ol>
-            <h4> Hobbies & Interests </h4>
-            <ul>
-                <li>Reading fiction and non-fiction books </li>
-                <li>Swimming</li>
-                <li>Yoga</li>
-            </ul>
+                <figure>
+                    <img class="photo" src="../portfolio/images/MeonSkye.jpeg" alt="Cristina looking onto a beach on Isle of Skye" width="300" height="300">
+                    </figure>
+                    <figcaption>
+                        I am the happiest when I am by the sea. <br> <i class="fa-solid fa-location-dot"></i> Isle of Skye 
+            </div>
 
-        
-            <section>
+            <div class="lists">
+                <h4> Qualities </h4>
+                    <ul>
+                        <li>Adaptable</li>
+                        <li>Good listener</li>
+                        <li>Reliable</li>
+                    </ul>
+                <br/> 
+                <h4> Hobbies & Interests </h4>
+                    <ul>
+                        <li>Swimming</li>
+                        <li>Yoga</li>
+                        <li>Reading</li>
+                    </ul>
                 
-            </section>
+            </div>
+            
+            <div id="contactform">
+
+                <h3>
+                    <p> Use the form below if you would like to get in touch with me: </p>
+                </h3>
+    
+                <fieldset id="details">
+                    <legend>Your Details:</legend>
+                    <label>
+                        Name:
+                        <input type="text" name="name">
+                    </label>
+                    <br/>
+                    <br/>
+                    <label>
+                        Email:
+                        <input type="email" name="email">
+                    </label>
+                </fieldset>
+                <br />
+    
+                <fieldset id="reasons">
+                    <legend>Reason for contacting:</legend>
+                    <label>
+                        <input type="checkbox" name="reason" value="feedback"> Provide feedback
+                    </label>
+                    <br/>
+                    <label>
+                        <input type="checkbox" name="reason" value="collaborate"> Collaborate
+                    </label>
+                    <br/>
+                    <label>
+                        <input type="checkbox" name="reason" value="questions"> Ask questions
+                    </label>
+                    <br/>
+                    <label>
+                        <input type="checkbox" name="reason" value="issues"> Report issues
+                    </label>
+                    <br/>
+                 </fieldset>
+                 <br/>
+
+                 <fieldset id="message">
+                        <legend>Your message:</legend>
+                        <label>
+                            <textarea name="message" placeholder="Enter your message here..." rows="5" cols="40"></textarea>
+                        </label>
+                 </fieldset>
+                 <br/>
+
+                 <input class="formbutton" type="submit" name="submit" value="Send"> 
+            </div>
+          
             <footer>
                 <p> 2023 &copy; Cristina S. </p>
             </footer>
